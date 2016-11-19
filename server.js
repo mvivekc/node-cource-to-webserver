@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
-const SERVER_PORT = 4444;
+const SERVER_PORT = process.env.PORT || 4444;
 
 var app = express();
 
