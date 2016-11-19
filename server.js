@@ -35,6 +35,11 @@ app.get('/about', (req, res)=> {
     title: "About page motherfaaqqer!!"
   });
 })
+app.get('/projects', (req, res)=> {
+  res.render("projects.hbs",  {
+    title: "projects page motherfaaqqer!!"
+  });
+})
 app.get('/bad', (req, res)=> {
   res.send( {error: "hello world"});
 })
